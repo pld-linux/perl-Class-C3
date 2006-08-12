@@ -8,13 +8,13 @@
 Summary:	Class::C3 - A pragma to use the C3 method resolution order algortihm
 Summary(pl):	Class::C3 - pragma do u¿ywania algorytmu C3 kolejno¶ci rozwi±zywania metod
 Name:		perl-Class-C3
-Version:	0.11
+Version:	0.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d1e4397b2cb3e3dbedf91137601f0d96
+# Source0-md5:	eb8f390f8d4497c23e5437048869c809
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}

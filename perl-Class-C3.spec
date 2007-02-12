@@ -6,7 +6,7 @@
 %define	pdir	Class
 %define	pnam	C3
 Summary:	Class::C3 - A pragma to use the C3 method resolution order algortihm
-Summary(pl):	Class::C3 - pragma do u¿ywania algorytmu C3 kolejno¶ci rozwi±zywania metod
+Summary(pl.UTF-8):   Class::C3 - pragma do uÅ¼ywania algorytmu C3 kolejnoÅ›ci rozwiÄ…zywania metod
 Name:		perl-Class-C3
 Version:	0.14
 Release:	1
@@ -38,19 +38,19 @@ the new-style classes in Python 2.3. Most recently it has been adopted
 as the 'canonical' MRO for Perl 6 classes, and the default MRO for
 Parrot objects as well.
 
-%description -l pl
+%description -l pl.UTF-8
 Jest to aktualnie eksperymentalna pragma do zmiany standardowej
-kolejno¶ci rozwi±zywania metod w Perlu 5 z pierwszej co do g³êboko¶ci,
-od lewej do prawej (czyli pre-order) na bardziej przemy¶lan± kolejno¶æ
-rozwi±zywania metod C3.
+kolejnoÅ›ci rozwiÄ…zywania metod w Perlu 5 z pierwszej co do gÅ‚Ä™bokoÅ›ci,
+od lewej do prawej (czyli pre-order) na bardziej przemyÅ›lanÄ… kolejnoÅ›Ä‡
+rozwiÄ…zywania metod C3.
 
-C3 to nazwa algorytmu, którego celem jest dostarczenie rozs±dnej
-kolejno¶ci rozwi±zywania metod przy wielokrotnym dziedziczeniu. Po raz
-pierwszy zosta³ wprowadzony w jêzyku Dylan (odno¶niki w sekcji SEE
-ALSO manuala), a nastêpnie zaadoptowany jako preferowana MRO (Method
-Resolution Order - kolejno¶æ rozwi±zywania metod) dla nowego stylu
-klas w Pythonie 2.3. Ostatnio zosta³ zaadoptowany jako "kanoniczna"
-MRO dla klas Perla 6 i domy¶lna MRO dla obiektów Parrota.
+C3 to nazwa algorytmu, ktÃ³rego celem jest dostarczenie rozsÄ…dnej
+kolejnoÅ›ci rozwiÄ…zywania metod przy wielokrotnym dziedziczeniu. Po raz
+pierwszy zostaÅ‚ wprowadzony w jÄ™zyku Dylan (odnoÅ›niki w sekcji SEE
+ALSO manuala), a nastÄ™pnie zaadoptowany jako preferowana MRO (Method
+Resolution Order - kolejnoÅ›Ä‡ rozwiÄ…zywania metod) dla nowego stylu
+klas w Pythonie 2.3. Ostatnio zostaÅ‚ zaadoptowany jako "kanoniczna"
+MRO dla klas Perla 6 i domyÅ›lna MRO dla obiektÃ³w Parrota.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

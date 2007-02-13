@@ -6,7 +6,7 @@
 %define	pdir	Class
 %define	pnam	C3
 Summary:	Class::C3 - A pragma to use the C3 method resolution order algortihm
-Summary(pl.UTF-8):   Class::C3 - pragma do używania algorytmu C3 kolejności rozwiązywania metod
+Summary(pl.UTF-8):	Class::C3 - pragma do używania algorytmu C3 kolejności rozwiązywania metod
 Name:		perl-Class-C3
 Version:	0.14
 Release:	1

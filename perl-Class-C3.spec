@@ -8,13 +8,13 @@
 Summary:	Class::C3 - A pragma to use the C3 method resolution order algortihm
 Summary(pl.UTF-8):	Class::C3 - pragma do używania algorytmu C3 kolejności rozwiązywania metod
 Name:		perl-Class-C3
-Version:	0.14
+Version:	0.19
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	72da38cad9fb3390f3bb7d898e44a437
+# Source0-md5:	bb3779da9c9786043ba2e0d9357b5078
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -56,7 +56,7 @@ MRO dla klas Perla 6 i domyślna MRO dla obiektów Parrota.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Class::C3")' \
 	INSTALLDIRS=vendor
 %{__make}
 

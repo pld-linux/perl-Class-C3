@@ -22,6 +22,7 @@ BuildRequires:	perl-Algorithm-C3
 BuildRequires:	perl-Sub-Name
 BuildRequires:	perl-Test-Exception >= 0.15
 %endif
+Suggests:	perl-Class-C3-XS
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

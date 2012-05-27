@@ -8,24 +8,26 @@
 Summary:	Class::C3 - A pragma to use the C3 method resolution order algorithm
 Summary(pl.UTF-8):	Class::C3 - pragma do używania algorytmu C3 kolejności rozwiązywania metod
 Name:		perl-Class-C3
-Version:	0.23
+Version:	0.24
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Class/FLORA/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5b997841af85a5f8ed8add7120d56611
+Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	c53c143998d0700c5b3190801b6800ea
 URL:		http://search.cpan.org/dist/Class-C3/
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.52
+BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-Algorithm-C3 >= 0.06
+BuildRequires:	perl-Algorithm-C3 >= 0.07
 BuildRequires:	perl-Scalar-List-Utils >= 1.10
 BuildRequires:	perl-Sub-Name
 BuildRequires:	perl-Test-Exception >= 0.15
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
-Suggests:	perl-Class-C3-XS >= 0.07
+Suggests:	perl-Class-C3-XS >= 0.13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

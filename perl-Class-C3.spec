@@ -14,11 +14,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0d5218ee75d933737abc338d7fab9d61
-URL:		http://search.cpan.org/dist/Class-C3/
+URL:		https://metacpan.org/release/Class-C3
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.52
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Algorithm-C3 >= 0.07
 BuildRequires:	perl-Scalar-List-Utils >= 1.10

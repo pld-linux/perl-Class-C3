@@ -1,20 +1,20 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define	pdir	Class
 %define	pnam	C3
 Summary:	Class::C3 - A pragma to use the C3 method resolution order algorithm
 Summary(pl.UTF-8):	Class::C3 - pragma do używania algorytmu C3 kolejności rozwiązywania metod
 Name:		perl-Class-C3
-Version:	0.34
+Version:	0.35
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0d5218ee75d933737abc338d7fab9d61
-URL:		https://metacpan.org/release/Class-C3
+Source0:	https://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	db5450767d46ddb8ff31a99fbef7f3e0
+URL:		https://metacpan.org/dist/Class-C3
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.52
 BuildRequires:	perl-ExtUtils-CBuilder >= 0.27
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -23,8 +23,6 @@ BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Algorithm-C3 >= 0.07
 BuildRequires:	perl-Scalar-List-Utils >= 1.10
-BuildRequires:	perl-Sub-Name
-BuildRequires:	perl-Test-Exception >= 0.15
 BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 Suggests:	perl-Class-C3-XS >= 0.13
